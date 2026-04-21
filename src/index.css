@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-accent-orange: #FF5A1F;
+  --color-bg-dark: #0F0F0F;
+  --color-bg-light: #FBFBFB;
+}
+
+@utility text-giant {
+  font-size: clamp(80px, 16vw, 160px);
+  line-height: 0.8;
+  letter-spacing: -0.05em;
+  font-weight: 900;
+}
+
+@utility glass-card {
+  background: rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
